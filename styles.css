@@ -1,0 +1,155 @@
+:root {
+    --branco-principal: #ffffff;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --botao-azul-hover: #3c92fa;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: "Inter", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: --fonte-principal, sans-serif;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.principal{
+    background-image: url(./img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+.container__titulo{
+    color: var(--branco-principal);
+    font-family: --fonte-principal, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75em;
+}
+.container__botao{
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    text-decoration: none;
+    border-radius: 0.5em;
+    padding: 1em;
+    display: block;
+    font-family: var(--fonte-principal);
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1em;
+    transition: background-color 0.2s ease-in-out;
+}
+.container__botao:hover{
+    background-color: var(--botao-azul-hover);
+}
+.botao_secundario{
+    background-color: transparent;
+    border: var(--branco-principal) 2px solid;
+    transition: background-color 0.2s ease-in-out;
+}
+.botao_secundario:hover{
+    background-color: var(--branco-principal);
+    color: var(--cor-de-fundo);
+}
+.container__aviso{
+    color: var(--cinza-secundario);
+    font-size: 0.75em;
+    font-family: var(--fonte-principal);
+}
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.secundario__imagem{
+    width: 80%;
+}
+.descricao__titulo{
+    font-size: 3em;
+    font-weight: 700;
+    color: var(--branco-principal);
+    margin-bottom: 0.2em;
+}
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 3em;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 2em;
+    color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+    padding-bottom: 1em;
+}
+.rodape__lista{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+.lista__link{
+    font-size: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin: 2em  1em;
+    font-family: var(--fonte-principal);
+}
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    
+}
+.lista__link a:hover{
+    color: var(--cinza-secundario);
+}
+.lista__link a:active{
+    color: var(--botao-azul);
+}
+.rodape__texto{
+    font-size: 0.875em;
+    color: var(--cinza-secundario);
+    margin: 0 1em 1em 1em;
+}
